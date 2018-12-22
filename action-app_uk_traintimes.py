@@ -56,7 +56,7 @@ class TrainTimes(object):
         board = self.darwin.get_station_board(self.home_station_code)
         s = None
         for service in board.train_services:
-            service_detail = darwin.get_service_details(service.service_id)
+            service_detail = self.darwin.get_service_details(service.service_id)
             codes = map(lambda x: x.crs, service_detail.subsequent_calling_points)
             if station_code in codes:
                 s = service
