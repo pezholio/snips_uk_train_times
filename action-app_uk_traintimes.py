@@ -42,7 +42,7 @@ class TrainTimes(object):
     def train_to_callback(self, hermes, intent_message):
         print '[Received] intent: {}'.format(intent_message.intent.intent_name)
         
-        depature = next_departure_to_station('BHM')
+        depature = self.next_departure_to_station('BHM')
         time = depature.std
         
         output = "The next train to Birmingham New Street is the %s" % (time)
