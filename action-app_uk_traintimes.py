@@ -66,7 +66,7 @@ class TrainTimes(object):
     # --> Register callback function and start MQTT
     def start_blocking(self):
         with Hermes(MQTT_ADDR) as h:
-            h.subscribe_intents(self.master_intent_callback).start()
+            h.subscribe_intents(self.train_to_callback).start()
 
 if __name__ == "__main__":
     TrainTimes()
