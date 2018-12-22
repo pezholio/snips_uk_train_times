@@ -1,5 +1,5 @@
 # Bindings for the hermes protocol
 hermes-python>=0.1
-nre-darwin-py=0.2.0
+nre-darwin-py==0.2.0
 
 # More dependency goes here..
