@@ -52,7 +52,7 @@ class TrainTimes(object):
         # if need to speak the execution result by tts
         hermes.publish_end_session(intent_message.session_id, output)
     
-    def next_departure_to_station(station_code):
+    def next_departure_to_station(self, station_code):
         board = self.darwin.get_station_board(self.home_station_code)
         s = None
         for service in board.train_services:
