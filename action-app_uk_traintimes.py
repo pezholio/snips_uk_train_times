@@ -40,17 +40,20 @@ class TrainTimes(object):
         
     # --> Sub callback function, one per intent
     def train_to_callback(self, hermes, intent_message):
-        print '[Received] intent: {}'.format(intent_message.intent.intent_name)
-        
-        depature = self.next_departure_to_station('BHM')
-        time = depature.std
-        
-        output = "The next train to Birmingham New Street is the %s" % (time)
-                                                                              
-        print output
+        if intent_message.intent.intent_name == 'pezholio:next_departure':
+            print '[Received] intent: {}'.format(intent_message.intent.intent_name)
+            
+            depature = self.next_departure_to_station('BHM')
+            time = depature.std
+            
+            output = "The next train to Birmingham New Street is the %s" % (time)
+                                                                                  
+            print output
 
-        # if need to speak the execution result by tts
-        hermes.publish_end_session(intent_message.session_id, output)
+            # if need to speak the execution result by tts
+            hermes.publish_end_session(intent_message.session_id, output)
+        else:
+            return
     
     def next_departure_to_station(self, station_code):
         board = self.darwin.get_station_board(self.home_station_code)
