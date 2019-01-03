@@ -5,6 +5,7 @@ from snipsTools import SnipsConfigParser
 from hermes_python.hermes import Hermes
 from hermes_python.ontology import *
 from nredarwin.webservice import DarwinLdbSession
+from get_times import GetTimes
 
 import io
 
@@ -30,10 +31,9 @@ class TrainTimes(object):
         except :
             self.config = None
         
-        api_key = self.config.get("secret").get("nre_api_key")
-        
+        self.api_key = self.config.get("secret").get("nre_api_key")
         self.home_station_code = self.config.get("secret").get("home_station_code")
-        self.darwin = DarwinLdbSession(wsdl="https://lite.realtime.nationalrail.co.uk/OpenLDBWS/wsdl.aspx", api_key=api_key)
+        self.destination_code = self.config.get("secret").get("destination_code")
 
         # start listening to MQTT
         self.start_blocking()
@@ -43,28 +43,13 @@ class TrainTimes(object):
         if intent_message.intent.intent_name == 'pezholio:next_departure':
             print '[Received] intent: {}'.format(intent_message.intent.intent_name)
             
-            depature = self.next_departure_to_station('BHM')
-            time = depature.std
-            
-            output = "The next train to Birmingham New Street is the %s" % (time)
-                                                                                  
-            print output
-
+            get_times = GetTimes(self.api_key, self.home_station_code, self.destination_code)
+                                                                                      
             # if need to speak the execution result by tts
-            hermes.publish_end_session(intent_message.session_id, output)
+            hermes.publish_end_session(intent_message.session_id, get_times.response())
         else:
             return
     
-    def next_departure_to_station(self, station_code):
-        board = self.darwin.get_station_board(self.home_station_code)
-        s = None
-        for service in board.train_services:
-            service_detail = self.darwin.get_service_details(service.service_id)
-            codes = map(lambda x: x.crs, service_detail.subsequent_calling_points)
-            if station_code in codes:
-                s = service
-                break
-        return s
         
     # --> Register callback function and start MQTT
     def start_blocking(self):
