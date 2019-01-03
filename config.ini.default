@@ -4,3 +4,4 @@
 #empty value for secret values
 nre_api_key=55ede721-e99e-488b-9087-bcfb611f54f3
 home_station_code=BKT
+destination_code=BHM
