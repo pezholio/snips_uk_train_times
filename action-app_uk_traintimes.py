@@ -48,7 +48,7 @@ class TrainTimes(object):
             get_times = GetTimes(self.darwin_session, self.home_station_code, self.destination_code)
             
             hermes.publish_end_session(intent_message.session_id, get_times.response())
-        else if intent_message.intent.intent_name == 'pezholio:next_train_to_station':
+        elif intent_message.intent.intent_name == 'pezholio:next_train_to_station':
             print '[Received] intent: {}'.format(intent_message.intent.intent_name)
             
             station = Station.find_by_name(intent_message.slots[0].value.value)
