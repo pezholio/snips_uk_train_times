@@ -1,0 +1,1145 @@
+interactions:
+- request:
+    body: !!python/unicode <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope
+      xmlns:ns0="http://thalesgroup.com/RTTI/2017-10-01/ldb/" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes"
+      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><com:AccessToken><com:TokenValue>55ede721-e99e-488b-9087-bcfb611f54f3</com:TokenValue></com:AccessToken></SOAP-ENV:Header><ns1:Body><ns0:GetDepartureBoardRequest><ns0:numRows>17</ns0:numRows><ns0:crs>BKT</ns0:crs></ns0:GetDepartureBoardRequest></ns1:Body></SOAP-ENV:Envelope>
+    headers:
+      Connection: [close]
+      Content-Length: ['639']
+      Content-Type: [text/xml; charset=utf-8]
+      Host: [lite.realtime.nationalrail.co.uk]
+      Soapaction: ['"http://thalesgroup.com/RTTI/2012-01-13/ldb/GetDepartureBoard"']
+      User-Agent: [Python-urllib/2.7]
+    method: POST
+    uri: https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetDepartureBoardResponse
+        xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><GetStationBoardResult
+        xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+        xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+        xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+        xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types"><lt4:generatedAt>2019-01-04T13:39:02.0385283+00:00</lt4:generatedAt><lt4:locationName>Blake
+        Street</lt4:locationName><lt4:crs>BKT</lt4:crs><lt4:platformAvailable>true</lt4:platformAvailable><lt7:trainServices><lt7:service><lt4:std>13:52</lt4:std><lt4:etd>On
+        time</lt4:etd><lt4:platform>1</lt4:platform><lt4:operator>West Midlands Trains</lt4:operator><lt4:operatorCode>LM</lt4:operatorCode><lt4:serviceType>train</lt4:serviceType><lt4:serviceID>jWIGjD1VWPFK+wXyxphTwA==</lt4:serviceID><lt5:rsid>LM173700</lt5:rsid><lt5:origin><lt4:location><lt4:locationName>Lichfield
+        City</lt4:locationName><lt4:crs>LIC</lt4:crs></lt4:location></lt5:origin><lt5:destination><lt4:location><lt4:locationName>Redditch</lt4:locationName><lt4:crs>RDC</lt4:crs></lt4:location></lt5:destination></lt7:service><lt7:service><lt4:std>13:53</lt4:std><lt4:etd>On
+        time</lt4:etd><lt4:platform>2</lt4:platform><lt4:operator>West Midlands Trains</lt4:operator><lt4:operatorCode>LM</lt4:operatorCode><lt4:serviceType>train</lt4:serviceType><lt4:serviceID>mU4bP+Jr6rDzfSGuwBpzUQ==</lt4:serviceID><lt5:rsid>LM157900</lt5:rsid><lt5:origin><lt4:location><lt4:locationName>Bromsgrove</lt4:locationName><lt4:crs>BMV</lt4:crs></lt4:location></lt5:origin><lt5:destination><lt4:location><lt4:locationName>Lichfield
+        Trent Valley</lt4:locationName><lt4:crs>LTV</lt4:crs></lt4:location></lt5:destination></lt7:service><lt7:service><lt4:std>14:02</lt4:std><lt4:etd>On
+        time</lt4:etd><lt4:platform>1</lt4:platform><lt4:operator>West Midlands Trains</lt4:operator><lt4:operatorCode>LM</lt4:operatorCode><lt4:serviceType>train</lt4:serviceType><lt4:serviceID>dZflKmtDPG9q/kOlZO3sBg==</lt4:serviceID><lt5:rsid>LM103800</lt5:rsid><lt5:origin><lt4:location><lt4:locationName>Lichfield
+        Trent Valley</lt4:locationName><lt4:crs>LTV</lt4:crs></lt4:location></lt5:origin><lt5:destination><lt4:location><lt4:locationName>Bromsgrove</lt4:locationName><lt4:crs>BMV</lt4:crs></lt4:location></lt5:destination></lt7:service><lt7:service><lt4:std>14:03</lt4:std><lt4:etd>On
+        time</lt4:etd><lt4:platform>2</lt4:platform><lt4:operator>West Midlands Trains</lt4:operator><lt4:operatorCode>LM</lt4:operatorCode><lt4:serviceType>train</lt4:serviceType><lt4:serviceID>+oPQgWrZud8kDH1vtpPkkQ==</lt4:serviceID><lt5:rsid>LM144500</lt5:rsid><lt5:origin><lt4:location><lt4:locationName>Redditch</lt4:locationName><lt4:crs>RDC</lt4:crs></lt4:location></lt5:origin><lt5:destination><lt4:location><lt4:locationName>Lichfield
+        City</lt4:locationName><lt4:crs>LIC</lt4:crs></lt4:location></lt5:destination></lt7:service><lt7:service><lt4:std>14:22</lt4:std><lt4:etd>On
+        time</lt4:etd><lt4:platform>1</lt4:platform><lt4:operator>West Midlands Trains</lt4:operator><lt4:operatorCode>LM</lt4:operatorCode><lt4:serviceType>train</lt4:serviceType><lt4:serviceID>6a6pLIxNxxbX58N8sFQyfA==</lt4:serviceID><lt5:rsid>LM103900</lt5:rsid><lt5:origin><lt4:location><lt4:locationName>Lichfield
+        City</lt4:locationName><lt4:crs>LIC</lt4:crs></lt4:location></lt5:origin><lt5:destination><lt4:location><lt4:locationName>Bromsgrove</lt4:locationName><lt4:crs>BMV</lt4:crs></lt4:location></lt5:destination></lt7:service><lt7:service><lt4:std>14:23</lt4:std><lt4:etd>On
+        time</lt4:etd><lt4:platform>2</lt4:platform><lt4:operator>West Midlands Trains</lt4:operator><lt4:operatorCode>LM</lt4:operatorCode><lt4:serviceType>train</lt4:serviceType><lt4:serviceID>mzpBCIhyRXBMk8nhDWgS5A==</lt4:serviceID><lt5:rsid>LM158700</lt5:rsid><lt5:origin><lt4:location><lt4:locationName>Redditch</lt4:locationName><lt4:crs>RDC</lt4:crs></lt4:location></lt5:origin><lt5:destination><lt4:location><lt4:locationName>Lichfield
+        Trent Valley</lt4:locationName><lt4:crs>LTV</lt4:crs></lt4:location></lt5:destination></lt7:service><lt7:service><lt4:std>14:32</lt4:std><lt4:etd>On
+        time</lt4:etd><lt4:platform>1</lt4:platform><lt4:operator>West Midlands Trains</lt4:operator><lt4:operatorCode>LM</lt4:operatorCode><lt4:serviceType>train</lt4:serviceType><lt4:serviceID>UK1717agjCPD3J9oOeaHrQ==</lt4:serviceID><lt5:rsid>LM173900</lt5:rsid><lt5:origin><lt4:location><lt4:locationName>Lichfield
+        Trent Valley</lt4:locationName><lt4:crs>LTV</lt4:crs></lt4:location></lt5:origin><lt5:destination><lt4:location><lt4:locationName>Redditch</lt4:locationName><lt4:crs>RDC</lt4:crs></lt4:location></lt5:destination></lt7:service><lt7:service><lt4:std>14:33</lt4:std><lt4:etd>On
+        time</lt4:etd><lt4:platform>2</lt4:platform><lt4:operator>West Midlands Trains</lt4:operator><lt4:operatorCode>LM</lt4:operatorCode><lt4:serviceType>train</lt4:serviceType><lt4:serviceID>0tFQJWU0NTq/PzfNdTtGzQ==</lt4:serviceID><lt5:rsid>LM144600</lt5:rsid><lt5:origin><lt4:location><lt4:locationName>Bromsgrove</lt4:locationName><lt4:crs>BMV</lt4:crs></lt4:location></lt5:origin><lt5:destination><lt4:location><lt4:locationName>Lichfield
+        City</lt4:locationName><lt4:crs>LIC</lt4:crs></lt4:location></lt5:destination></lt7:service><lt7:service><lt4:std>14:52</lt4:std><lt4:etd>On
+        time</lt4:etd><lt4:platform>1</lt4:platform><lt4:operator>West Midlands Trains</lt4:operator><lt4:operatorCode>LM</lt4:operatorCode><lt4:serviceType>train</lt4:serviceType><lt4:serviceID>SLfeHB7v7H6AezlgdJ3ong==</lt4:serviceID><lt5:rsid>LM174000</lt5:rsid><lt5:origin><lt4:location><lt4:locationName>Lichfield
+        City</lt4:locationName><lt4:crs>LIC</lt4:crs></lt4:location></lt5:origin><lt5:destination><lt4:location><lt4:locationName>Redditch</lt4:locationName><lt4:crs>RDC</lt4:crs></lt4:location></lt5:destination></lt7:service><lt7:service><lt4:std>14:53</lt4:std><lt4:etd>On
+        time</lt4:etd><lt4:platform>2</lt4:platform><lt4:operator>West Midlands Trains</lt4:operator><lt4:operatorCode>LM</lt4:operatorCode><lt4:serviceType>train</lt4:serviceType><lt4:serviceID>f/3K0nz8euy5Z7X8g1Y2vw==</lt4:serviceID><lt5:rsid>LM159400</lt5:rsid><lt5:origin><lt4:location><lt4:locationName>Bromsgrove</lt4:locationName><lt4:crs>BMV</lt4:crs></lt4:location></lt5:origin><lt5:destination><lt4:location><lt4:locationName>Lichfield
+        Trent Valley</lt4:locationName><lt4:crs>LTV</lt4:crs></lt4:location></lt5:destination></lt7:service><lt7:service><lt4:std>15:02</lt4:std><lt4:etd>On
+        time</lt4:etd><lt4:platform>1</lt4:platform><lt4:operator>West Midlands Trains</lt4:operator><lt4:operatorCode>LM</lt4:operatorCode><lt4:serviceType>train</lt4:serviceType><lt4:serviceID>J+RKZnn02MEN0vqJ+aTg6w==</lt4:serviceID><lt5:rsid>LM104300</lt5:rsid><lt5:origin><lt4:location><lt4:locationName>Lichfield
+        Trent Valley</lt4:locationName><lt4:crs>LTV</lt4:crs></lt4:location></lt5:origin><lt5:destination><lt4:location><lt4:locationName>Bromsgrove</lt4:locationName><lt4:crs>BMV</lt4:crs></lt4:location></lt5:destination></lt7:service><lt7:service><lt4:std>15:03</lt4:std><lt4:etd>On
+        time</lt4:etd><lt4:platform>2</lt4:platform><lt4:operator>West Midlands Trains</lt4:operator><lt4:operatorCode>LM</lt4:operatorCode><lt4:serviceType>train</lt4:serviceType><lt4:serviceID>JuEhqYpARtPOcc3QkKQMQQ==</lt4:serviceID><lt5:rsid>LM144700</lt5:rsid><lt5:origin><lt4:location><lt4:locationName>Redditch</lt4:locationName><lt4:crs>RDC</lt4:crs></lt4:location></lt5:origin><lt5:destination><lt4:location><lt4:locationName>Lichfield
+        City</lt4:locationName><lt4:crs>LIC</lt4:crs></lt4:location></lt5:destination></lt7:service><lt7:service><lt4:std>15:22</lt4:std><lt4:etd>On
+        time</lt4:etd><lt4:operator>West Midlands Trains</lt4:operator><lt4:operatorCode>LM</lt4:operatorCode><lt4:serviceType>train</lt4:serviceType><lt4:serviceID>t5Og/dId8ZWktdgesLhvBA==</lt4:serviceID><lt5:rsid>LM104600</lt5:rsid><lt5:origin><lt4:location><lt4:locationName>Lichfield
+        City</lt4:locationName><lt4:crs>LIC</lt4:crs></lt4:location></lt5:origin><lt5:destination><lt4:location><lt4:locationName>Bromsgrove</lt4:locationName><lt4:crs>BMV</lt4:crs></lt4:location></lt5:destination></lt7:service><lt7:service><lt4:std>15:23</lt4:std><lt4:etd>On
+        time</lt4:etd><lt4:operator>West Midlands Trains</lt4:operator><lt4:operatorCode>LM</lt4:operatorCode><lt4:serviceType>train</lt4:serviceType><lt4:serviceID>HSVKtrxeidF6xN4yMTO51w==</lt4:serviceID><lt5:rsid>LM160100</lt5:rsid><lt5:origin><lt4:location><lt4:locationName>Redditch</lt4:locationName><lt4:crs>RDC</lt4:crs></lt4:location></lt5:origin><lt5:destination><lt4:location><lt4:locationName>Lichfield
+        Trent Valley</lt4:locationName><lt4:crs>LTV</lt4:crs></lt4:location></lt5:destination></lt7:service><lt7:service><lt4:std>15:32</lt4:std><lt4:etd>On
+        time</lt4:etd><lt4:operator>West Midlands Trains</lt4:operator><lt4:operatorCode>LM</lt4:operatorCode><lt4:serviceType>train</lt4:serviceType><lt4:serviceID>ydY3UepFd1Zim0QuhOWOmg==</lt4:serviceID><lt5:rsid>LM174200</lt5:rsid><lt5:origin><lt4:location><lt4:locationName>Lichfield
+        Trent Valley</lt4:locationName><lt4:crs>LTV</lt4:crs></lt4:location></lt5:origin><lt5:destination><lt4:location><lt4:locationName>Redditch</lt4:locationName><lt4:crs>RDC</lt4:crs></lt4:location></lt5:destination></lt7:service><lt7:service><lt4:std>15:33</lt4:std><lt4:etd>On
+        time</lt4:etd><lt4:operator>West Midlands Trains</lt4:operator><lt4:operatorCode>LM</lt4:operatorCode><lt4:serviceType>train</lt4:serviceType><lt4:serviceID>ZbbGn5vzydzfOmYCY8zJUA==</lt4:serviceID><lt5:rsid>LM144800</lt5:rsid><lt5:origin><lt4:location><lt4:locationName>Bromsgrove</lt4:locationName><lt4:crs>BMV</lt4:crs></lt4:location></lt5:origin><lt5:destination><lt4:location><lt4:locationName>Lichfield
+        City</lt4:locationName><lt4:crs>LIC</lt4:crs></lt4:location></lt5:destination></lt7:service></lt7:trainServices></GetStationBoardResult></GetDepartureBoardResponse></soap:Body></soap:Envelope>'}
+    headers:
+      cache-control: ['private, max-age=0']
+      connection: [Close]
+      content-length: ['10247']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Fri, 04 Jan 2019 13:39:01 GMT']
+      server: [Microsoft-IIS/10.0]
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+      x-server: [172.22.22.102]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope
+      xmlns:ns0="http://thalesgroup.com/RTTI/2017-10-01/ldb/" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes"
+      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><com:AccessToken><com:TokenValue>55ede721-e99e-488b-9087-bcfb611f54f3</com:TokenValue></com:AccessToken></SOAP-ENV:Header><ns1:Body><ns0:GetServiceDetailsRequest><ns0:serviceID>jWIGjD1VWPFK+wXyxphTwA==</ns0:serviceID></ns0:GetServiceDetailsRequest></ns1:Body></SOAP-ENV:Envelope>
+    headers:
+      Connection: [close]
+      Content-Length: ['643']
+      Content-Type: [text/xml; charset=utf-8]
+      Host: [lite.realtime.nationalrail.co.uk]
+      Soapaction: ['"http://thalesgroup.com/RTTI/2012-01-13/ldb/GetServiceDetails"']
+      User-Agent: [Python-urllib/2.7]
+    method: POST
+    uri: https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetServiceDetailsResponse
+        xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><GetServiceDetailsResult
+        xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+        xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+        xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+        xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types"><lt7:generatedAt>2019-01-04T13:39:02.1947647+00:00</lt7:generatedAt><lt7:serviceType>train</lt7:serviceType><lt7:locationName>Blake
+        Street</lt7:locationName><lt7:crs>BKT</lt7:crs><lt7:operator>West Midlands
+        Trains</lt7:operator><lt7:operatorCode>LM</lt7:operatorCode><lt7:rsid>LM173700</lt7:rsid><lt7:platform>1</lt7:platform><lt7:sta>13:52</lt7:sta><lt7:eta>On
+        time</lt7:eta><lt7:std>13:52</lt7:std><lt7:etd>On time</lt7:etd><lt7:previousCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Lichfield
+        City</lt7:locationName><lt7:crs>LIC</lt7:crs><lt7:st>13:46</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:previousCallingPoints><lt7:subsequentCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Butlers
+        Lane</lt7:locationName><lt7:crs>BUL</lt7:crs><lt7:st>13:54</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Four Oaks</lt7:locationName><lt7:crs>FOK</lt7:crs><lt7:st>13:56</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Sutton
+        Coldfield</lt7:locationName><lt7:crs>SUT</lt7:crs><lt7:st>13:59</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Wylde
+        Green</lt7:locationName><lt7:crs>WYL</lt7:crs><lt7:st>14:02</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Chester
+        Road</lt7:locationName><lt7:crs>CRD</lt7:crs><lt7:st>14:04</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Erdington</lt7:locationName><lt7:crs>ERD</lt7:crs><lt7:st>14:07</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Gravelly
+        Hill</lt7:locationName><lt7:crs>GVH</lt7:crs><lt7:st>14:09</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Aston</lt7:locationName><lt7:crs>AST</lt7:crs><lt7:st>14:13</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Birmingham
+        New Street</lt7:locationName><lt7:crs>BHM</lt7:crs><lt7:st>14:21</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Five Ways</lt7:locationName><lt7:crs>FWY</lt7:crs><lt7:st>14:26</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>University</lt7:locationName><lt7:crs>UNI</lt7:crs><lt7:st>14:30</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Selly
+        Oak</lt7:locationName><lt7:crs>SLY</lt7:crs><lt7:st>14:33</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bournville</lt7:locationName><lt7:crs>BRV</lt7:crs><lt7:st>14:36</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Kings
+        Norton</lt7:locationName><lt7:crs>KNN</lt7:crs><lt7:st>14:38</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Northfield</lt7:locationName><lt7:crs>NFD</lt7:crs><lt7:st>14:42</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Longbridge</lt7:locationName><lt7:crs>LOB</lt7:crs><lt7:st>14:44</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Barnt
+        Green</lt7:locationName><lt7:crs>BTG</lt7:crs><lt7:st>14:50</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Alvechurch</lt7:locationName><lt7:crs>ALV</lt7:crs><lt7:st>14:55</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Redditch</lt7:locationName><lt7:crs>RDC</lt7:crs><lt7:st>15:03</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:subsequentCallingPoints></GetServiceDetailsResult></GetServiceDetailsResponse></soap:Body></soap:Envelope>'}
+    headers:
+      cache-control: ['private, max-age=0']
+      connection: [Close]
+      content-length: ['4521']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Fri, 04 Jan 2019 13:39:02 GMT']
+      server: [Microsoft-IIS/10.0]
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+      x-server: [172.22.22.102]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope
+      xmlns:ns0="http://thalesgroup.com/RTTI/2017-10-01/ldb/" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes"
+      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><com:AccessToken><com:TokenValue>55ede721-e99e-488b-9087-bcfb611f54f3</com:TokenValue></com:AccessToken></SOAP-ENV:Header><ns1:Body><ns0:GetServiceDetailsRequest><ns0:serviceID>mU4bP+Jr6rDzfSGuwBpzUQ==</ns0:serviceID></ns0:GetServiceDetailsRequest></ns1:Body></SOAP-ENV:Envelope>
+    headers:
+      Connection: [close]
+      Content-Length: ['643']
+      Content-Type: [text/xml; charset=utf-8]
+      Host: [lite.realtime.nationalrail.co.uk]
+      Soapaction: ['"http://thalesgroup.com/RTTI/2012-01-13/ldb/GetServiceDetails"']
+      User-Agent: [Python-urllib/2.7]
+    method: POST
+    uri: https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetServiceDetailsResponse
+        xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><GetServiceDetailsResult
+        xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+        xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+        xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+        xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types"><lt7:generatedAt>2019-01-04T13:39:02.3173128+00:00</lt7:generatedAt><lt7:serviceType>train</lt7:serviceType><lt7:locationName>Blake
+        Street</lt7:locationName><lt7:crs>BKT</lt7:crs><lt7:operator>West Midlands
+        Trains</lt7:operator><lt7:operatorCode>LM</lt7:operatorCode><lt7:rsid>LM157900</lt7:rsid><lt7:platform>2</lt7:platform><lt7:sta>13:53</lt7:sta><lt7:eta>On
+        time</lt7:eta><lt7:std>13:53</lt7:std><lt7:etd>On time</lt7:etd><lt7:previousCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Bromsgrove</lt7:locationName><lt7:crs>BMV</lt7:crs><lt7:st>12:51</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Barnt
+        Green</lt7:locationName><lt7:crs>BTG</lt7:crs><lt7:st>12:57</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Longbridge</lt7:locationName><lt7:crs>LOB</lt7:crs><lt7:st>13:02</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Northfield</lt7:locationName><lt7:crs>NFD</lt7:crs><lt7:st>13:04</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Kings
+        Norton</lt7:locationName><lt7:crs>KNN</lt7:crs><lt7:st>13:07</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bournville</lt7:locationName><lt7:crs>BRV</lt7:crs><lt7:st>13:09</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Selly
+        Oak</lt7:locationName><lt7:crs>SLY</lt7:crs><lt7:st>13:12</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>University</lt7:locationName><lt7:crs>UNI</lt7:crs><lt7:st>13:15</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Five Ways</lt7:locationName><lt7:crs>FWY</lt7:crs><lt7:st>13:18</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Birmingham
+        New Street</lt7:locationName><lt7:crs>BHM</lt7:crs><lt7:st>13:25</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Aston</lt7:locationName><lt7:crs>AST</lt7:crs><lt7:st>13:31</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Gravelly
+        Hill</lt7:locationName><lt7:crs>GVH</lt7:crs><lt7:st>13:34</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Erdington</lt7:locationName><lt7:crs>ERD</lt7:crs><lt7:st>13:37</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Chester
+        Road</lt7:locationName><lt7:crs>CRD</lt7:crs><lt7:st>13:39</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Wylde
+        Green</lt7:locationName><lt7:crs>WYL</lt7:crs><lt7:st>13:42</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Sutton
+        Coldfield</lt7:locationName><lt7:crs>SUT</lt7:crs><lt7:st>13:45</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Four Oaks</lt7:locationName><lt7:crs>FOK</lt7:crs><lt7:st>13:48</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Butlers
+        Lane</lt7:locationName><lt7:crs>BUL</lt7:crs><lt7:st>13:51</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:previousCallingPoints><lt7:subsequentCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Shenstone</lt7:locationName><lt7:crs>SEN</lt7:crs><lt7:st>13:56</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Lichfield
+        City</lt7:locationName><lt7:crs>LIC</lt7:crs><lt7:st>14:02</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Lichfield
+        Trent Valley</lt7:locationName><lt7:crs>LTV</lt7:crs><lt7:st>14:05</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:subsequentCallingPoints></GetServiceDetailsResult></GetServiceDetailsResponse></soap:Body></soap:Envelope>'}
+    headers:
+      cache-control: ['private, max-age=0']
+      connection: [Close]
+      content-length: ['4686']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Fri, 04 Jan 2019 13:39:01 GMT']
+      server: [Microsoft-IIS/10.0]
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+      x-server: [172.22.22.31]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope
+      xmlns:ns0="http://thalesgroup.com/RTTI/2017-10-01/ldb/" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes"
+      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><com:AccessToken><com:TokenValue>55ede721-e99e-488b-9087-bcfb611f54f3</com:TokenValue></com:AccessToken></SOAP-ENV:Header><ns1:Body><ns0:GetServiceDetailsRequest><ns0:serviceID>dZflKmtDPG9q/kOlZO3sBg==</ns0:serviceID></ns0:GetServiceDetailsRequest></ns1:Body></SOAP-ENV:Envelope>
+    headers:
+      Connection: [close]
+      Content-Length: ['643']
+      Content-Type: [text/xml; charset=utf-8]
+      Host: [lite.realtime.nationalrail.co.uk]
+      Soapaction: ['"http://thalesgroup.com/RTTI/2012-01-13/ldb/GetServiceDetails"']
+      User-Agent: [Python-urllib/2.7]
+    method: POST
+    uri: https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetServiceDetailsResponse
+        xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><GetServiceDetailsResult
+        xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+        xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+        xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+        xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types"><lt7:generatedAt>2019-01-04T13:39:02.4423138+00:00</lt7:generatedAt><lt7:serviceType>train</lt7:serviceType><lt7:locationName>Blake
+        Street</lt7:locationName><lt7:crs>BKT</lt7:crs><lt7:operator>West Midlands
+        Trains</lt7:operator><lt7:operatorCode>LM</lt7:operatorCode><lt7:rsid>LM103800</lt7:rsid><lt7:platform>1</lt7:platform><lt7:sta>14:02</lt7:sta><lt7:eta>On
+        time</lt7:eta><lt7:std>14:02</lt7:std><lt7:etd>On time</lt7:etd><lt7:previousCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Lichfield
+        Trent Valley</lt7:locationName><lt7:crs>LTV</lt7:crs><lt7:st>13:50</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Lichfield
+        City</lt7:locationName><lt7:crs>LIC</lt7:crs><lt7:st>13:54</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Shenstone</lt7:locationName><lt7:crs>SEN</lt7:crs><lt7:st>13:59</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:previousCallingPoints><lt7:subsequentCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Butlers
+        Lane</lt7:locationName><lt7:crs>BUL</lt7:crs><lt7:st>14:03</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Four Oaks</lt7:locationName><lt7:crs>FOK</lt7:crs><lt7:st>14:06</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Sutton
+        Coldfield</lt7:locationName><lt7:crs>SUT</lt7:crs><lt7:st>14:10</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Wylde
+        Green</lt7:locationName><lt7:crs>WYL</lt7:crs><lt7:st>14:12</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Chester
+        Road</lt7:locationName><lt7:crs>CRD</lt7:crs><lt7:st>14:14</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Erdington</lt7:locationName><lt7:crs>ERD</lt7:crs><lt7:st>14:17</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Gravelly
+        Hill</lt7:locationName><lt7:crs>GVH</lt7:crs><lt7:st>14:19</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Aston</lt7:locationName><lt7:crs>AST</lt7:crs><lt7:st>14:23</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Birmingham
+        New Street</lt7:locationName><lt7:crs>BHM</lt7:crs><lt7:st>14:31</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Five Ways</lt7:locationName><lt7:crs>FWY</lt7:crs><lt7:st>14:36</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>University</lt7:locationName><lt7:crs>UNI</lt7:crs><lt7:st>14:40</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Selly
+        Oak</lt7:locationName><lt7:crs>SLY</lt7:crs><lt7:st>14:43</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bournville</lt7:locationName><lt7:crs>BRV</lt7:crs><lt7:st>14:46</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Kings
+        Norton</lt7:locationName><lt7:crs>KNN</lt7:crs><lt7:st>14:48</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Northfield</lt7:locationName><lt7:crs>NFD</lt7:crs><lt7:st>14:52</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Longbridge</lt7:locationName><lt7:crs>LOB</lt7:crs><lt7:st>14:54</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bromsgrove</lt7:locationName><lt7:crs>BMV</lt7:crs><lt7:st>15:07</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:subsequentCallingPoints></GetServiceDetailsResult></GetServiceDetailsResponse></soap:Body></soap:Envelope>'}
+    headers:
+      cache-control: ['private, max-age=0']
+      connection: [Close]
+      content-length: ['4533']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Fri, 04 Jan 2019 13:39:01 GMT']
+      server: [Microsoft-IIS/10.0]
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+      x-server: [172.22.22.31]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope
+      xmlns:ns0="http://thalesgroup.com/RTTI/2017-10-01/ldb/" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes"
+      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><com:AccessToken><com:TokenValue>55ede721-e99e-488b-9087-bcfb611f54f3</com:TokenValue></com:AccessToken></SOAP-ENV:Header><ns1:Body><ns0:GetServiceDetailsRequest><ns0:serviceID>+oPQgWrZud8kDH1vtpPkkQ==</ns0:serviceID></ns0:GetServiceDetailsRequest></ns1:Body></SOAP-ENV:Envelope>
+    headers:
+      Connection: [close]
+      Content-Length: ['643']
+      Content-Type: [text/xml; charset=utf-8]
+      Host: [lite.realtime.nationalrail.co.uk]
+      Soapaction: ['"http://thalesgroup.com/RTTI/2012-01-13/ldb/GetServiceDetails"']
+      User-Agent: [Python-urllib/2.7]
+    method: POST
+    uri: https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetServiceDetailsResponse
+        xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><GetServiceDetailsResult
+        xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+        xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+        xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+        xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types"><lt7:generatedAt>2019-01-04T13:39:02.5673149+00:00</lt7:generatedAt><lt7:serviceType>train</lt7:serviceType><lt7:locationName>Blake
+        Street</lt7:locationName><lt7:crs>BKT</lt7:crs><lt7:operator>West Midlands
+        Trains</lt7:operator><lt7:operatorCode>LM</lt7:operatorCode><lt7:rsid>LM144500</lt7:rsid><lt7:platform>2</lt7:platform><lt7:sta>14:03</lt7:sta><lt7:eta>On
+        time</lt7:eta><lt7:std>14:03</lt7:std><lt7:etd>On time</lt7:etd><lt7:previousCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Redditch</lt7:locationName><lt7:crs>RDC</lt7:crs><lt7:st>12:55</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Alvechurch</lt7:locationName><lt7:crs>ALV</lt7:crs><lt7:st>13:00</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Barnt
+        Green</lt7:locationName><lt7:crs>BTG</lt7:crs><lt7:st>13:07</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Longbridge</lt7:locationName><lt7:crs>LOB</lt7:crs><lt7:st>13:12</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Northfield</lt7:locationName><lt7:crs>NFD</lt7:crs><lt7:st>13:14</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Kings
+        Norton</lt7:locationName><lt7:crs>KNN</lt7:crs><lt7:st>13:17</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bournville</lt7:locationName><lt7:crs>BRV</lt7:crs><lt7:st>13:19</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Selly
+        Oak</lt7:locationName><lt7:crs>SLY</lt7:crs><lt7:st>13:22</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>University</lt7:locationName><lt7:crs>UNI</lt7:crs><lt7:st>13:25</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Five Ways</lt7:locationName><lt7:crs>FWY</lt7:crs><lt7:st>13:28</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Birmingham
+        New Street</lt7:locationName><lt7:crs>BHM</lt7:crs><lt7:st>13:35</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Aston</lt7:locationName><lt7:crs>AST</lt7:crs><lt7:st>13:41</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Gravelly
+        Hill</lt7:locationName><lt7:crs>GVH</lt7:crs><lt7:st>13:44</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Erdington</lt7:locationName><lt7:crs>ERD</lt7:crs><lt7:st>13:47</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Chester
+        Road</lt7:locationName><lt7:crs>CRD</lt7:crs><lt7:st>13:49</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Wylde
+        Green</lt7:locationName><lt7:crs>WYL</lt7:crs><lt7:st>13:52</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Sutton
+        Coldfield</lt7:locationName><lt7:crs>SUT</lt7:crs><lt7:st>13:55</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Four Oaks</lt7:locationName><lt7:crs>FOK</lt7:crs><lt7:st>13:58</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Butlers
+        Lane</lt7:locationName><lt7:crs>BUL</lt7:crs><lt7:st>14:01</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:previousCallingPoints><lt7:subsequentCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Lichfield
+        City</lt7:locationName><lt7:crs>LIC</lt7:crs><lt7:st>14:11</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:subsequentCallingPoints></GetServiceDetailsResult></GetServiceDetailsResponse></soap:Body></soap:Envelope>'}
+    headers:
+      cache-control: ['private, max-age=0']
+      connection: [Close]
+      content-length: ['4521']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Fri, 04 Jan 2019 13:39:01 GMT']
+      server: [Microsoft-IIS/10.0]
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+      x-server: [172.22.22.31]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope
+      xmlns:ns0="http://thalesgroup.com/RTTI/2017-10-01/ldb/" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes"
+      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><com:AccessToken><com:TokenValue>55ede721-e99e-488b-9087-bcfb611f54f3</com:TokenValue></com:AccessToken></SOAP-ENV:Header><ns1:Body><ns0:GetServiceDetailsRequest><ns0:serviceID>6a6pLIxNxxbX58N8sFQyfA==</ns0:serviceID></ns0:GetServiceDetailsRequest></ns1:Body></SOAP-ENV:Envelope>
+    headers:
+      Connection: [close]
+      Content-Length: ['643']
+      Content-Type: [text/xml; charset=utf-8]
+      Host: [lite.realtime.nationalrail.co.uk]
+      Soapaction: ['"http://thalesgroup.com/RTTI/2012-01-13/ldb/GetServiceDetails"']
+      User-Agent: [Python-urllib/2.7]
+    method: POST
+    uri: https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetServiceDetailsResponse
+        xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><GetServiceDetailsResult
+        xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+        xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+        xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+        xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types"><lt7:generatedAt>2019-01-04T13:39:02.6947616+00:00</lt7:generatedAt><lt7:serviceType>train</lt7:serviceType><lt7:locationName>Blake
+        Street</lt7:locationName><lt7:crs>BKT</lt7:crs><lt7:operator>West Midlands
+        Trains</lt7:operator><lt7:operatorCode>LM</lt7:operatorCode><lt7:rsid>LM103900</lt7:rsid><lt7:platform>1</lt7:platform><lt7:sta>14:22</lt7:sta><lt7:eta>On
+        time</lt7:eta><lt7:std>14:22</lt7:std><lt7:etd>On time</lt7:etd><lt7:previousCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Lichfield
+        City</lt7:locationName><lt7:crs>LIC</lt7:crs><lt7:st>14:16</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:previousCallingPoints><lt7:subsequentCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Butlers
+        Lane</lt7:locationName><lt7:crs>BUL</lt7:crs><lt7:st>14:24</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Four Oaks</lt7:locationName><lt7:crs>FOK</lt7:crs><lt7:st>14:26</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Sutton
+        Coldfield</lt7:locationName><lt7:crs>SUT</lt7:crs><lt7:st>14:30</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Wylde
+        Green</lt7:locationName><lt7:crs>WYL</lt7:crs><lt7:st>14:32</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Chester
+        Road</lt7:locationName><lt7:crs>CRD</lt7:crs><lt7:st>14:34</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Erdington</lt7:locationName><lt7:crs>ERD</lt7:crs><lt7:st>14:36</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Gravelly
+        Hill</lt7:locationName><lt7:crs>GVH</lt7:crs><lt7:st>14:39</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Aston</lt7:locationName><lt7:crs>AST</lt7:crs><lt7:st>14:43</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Birmingham
+        New Street</lt7:locationName><lt7:crs>BHM</lt7:crs><lt7:st>14:50</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Five Ways</lt7:locationName><lt7:crs>FWY</lt7:crs><lt7:st>14:56</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>University</lt7:locationName><lt7:crs>UNI</lt7:crs><lt7:st>15:00</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Selly
+        Oak</lt7:locationName><lt7:crs>SLY</lt7:crs><lt7:st>15:03</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bournville</lt7:locationName><lt7:crs>BRV</lt7:crs><lt7:st>15:06</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Kings
+        Norton</lt7:locationName><lt7:crs>KNN</lt7:crs><lt7:st>15:08</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Northfield</lt7:locationName><lt7:crs>NFD</lt7:crs><lt7:st>15:12</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Longbridge</lt7:locationName><lt7:crs>LOB</lt7:crs><lt7:st>15:14</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Barnt
+        Green</lt7:locationName><lt7:crs>BTG</lt7:crs><lt7:st>15:19</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bromsgrove</lt7:locationName><lt7:crs>BMV</lt7:crs><lt7:st>15:25</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:subsequentCallingPoints></GetServiceDetailsResult></GetServiceDetailsResponse></soap:Body></soap:Envelope>'}
+    headers:
+      cache-control: ['private, max-age=0']
+      connection: [Close]
+      content-length: ['4371']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Fri, 04 Jan 2019 13:39:02 GMT']
+      server: [Microsoft-IIS/10.0]
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+      x-server: [172.22.22.102]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope
+      xmlns:ns0="http://thalesgroup.com/RTTI/2017-10-01/ldb/" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes"
+      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><com:AccessToken><com:TokenValue>55ede721-e99e-488b-9087-bcfb611f54f3</com:TokenValue></com:AccessToken></SOAP-ENV:Header><ns1:Body><ns0:GetServiceDetailsRequest><ns0:serviceID>mzpBCIhyRXBMk8nhDWgS5A==</ns0:serviceID></ns0:GetServiceDetailsRequest></ns1:Body></SOAP-ENV:Envelope>
+    headers:
+      Connection: [close]
+      Content-Length: ['643']
+      Content-Type: [text/xml; charset=utf-8]
+      Host: [lite.realtime.nationalrail.co.uk]
+      Soapaction: ['"http://thalesgroup.com/RTTI/2012-01-13/ldb/GetServiceDetails"']
+      User-Agent: [Python-urllib/2.7]
+    method: POST
+    uri: https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetServiceDetailsResponse
+        xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><GetServiceDetailsResult
+        xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+        xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+        xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+        xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types"><lt7:generatedAt>2019-01-04T13:39:02.8053617+00:00</lt7:generatedAt><lt7:serviceType>train</lt7:serviceType><lt7:locationName>Blake
+        Street</lt7:locationName><lt7:crs>BKT</lt7:crs><lt7:operator>West Midlands
+        Trains</lt7:operator><lt7:operatorCode>LM</lt7:operatorCode><lt7:rsid>LM158700</lt7:rsid><lt7:platform>2</lt7:platform><lt7:sta>14:23</lt7:sta><lt7:eta>On
+        time</lt7:eta><lt7:std>14:23</lt7:std><lt7:etd>On time</lt7:etd><lt7:previousCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Redditch</lt7:locationName><lt7:crs>RDC</lt7:crs><lt7:st>13:12</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Alvechurch</lt7:locationName><lt7:crs>ALV</lt7:crs><lt7:st>13:17</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Barnt
+        Green</lt7:locationName><lt7:crs>BTG</lt7:crs><lt7:st>13:23</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Longbridge</lt7:locationName><lt7:crs>LOB</lt7:crs><lt7:st>13:32</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Northfield</lt7:locationName><lt7:crs>NFD</lt7:crs><lt7:st>13:34</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Kings
+        Norton</lt7:locationName><lt7:crs>KNN</lt7:crs><lt7:st>13:37</lt7:st><lt7:et>13:39</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bournville</lt7:locationName><lt7:crs>BRV</lt7:crs><lt7:st>13:39</lt7:st><lt7:et>13:42</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Selly
+        Oak</lt7:locationName><lt7:crs>SLY</lt7:crs><lt7:st>13:42</lt7:st><lt7:et>13:44</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>University</lt7:locationName><lt7:crs>UNI</lt7:crs><lt7:st>13:45</lt7:st><lt7:et>13:47</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Five
+        Ways</lt7:locationName><lt7:crs>FWY</lt7:crs><lt7:st>13:48</lt7:st><lt7:et>13:51</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Birmingham
+        New Street</lt7:locationName><lt7:crs>BHM</lt7:crs><lt7:st>13:55</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Aston</lt7:locationName><lt7:crs>AST</lt7:crs><lt7:st>14:01</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Gravelly
+        Hill</lt7:locationName><lt7:crs>GVH</lt7:crs><lt7:st>14:04</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Erdington</lt7:locationName><lt7:crs>ERD</lt7:crs><lt7:st>14:07</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Chester
+        Road</lt7:locationName><lt7:crs>CRD</lt7:crs><lt7:st>14:09</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Wylde
+        Green</lt7:locationName><lt7:crs>WYL</lt7:crs><lt7:st>14:12</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Sutton
+        Coldfield</lt7:locationName><lt7:crs>SUT</lt7:crs><lt7:st>14:15</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Four Oaks</lt7:locationName><lt7:crs>FOK</lt7:crs><lt7:st>14:18</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Butlers
+        Lane</lt7:locationName><lt7:crs>BUL</lt7:crs><lt7:st>14:21</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:previousCallingPoints><lt7:subsequentCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Shenstone</lt7:locationName><lt7:crs>SEN</lt7:crs><lt7:st>14:26</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Lichfield
+        City</lt7:locationName><lt7:crs>LIC</lt7:crs><lt7:st>14:32</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Lichfield
+        Trent Valley</lt7:locationName><lt7:crs>LTV</lt7:crs><lt7:st>14:35</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:subsequentCallingPoints></GetServiceDetailsResult></GetServiceDetailsResponse></soap:Body></soap:Envelope>'}
+    headers:
+      cache-control: ['private, max-age=0']
+      connection: [Close]
+      content-length: ['4826']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Fri, 04 Jan 2019 13:39:02 GMT']
+      server: [Microsoft-IIS/10.0]
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+      x-server: [172.22.22.102]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope
+      xmlns:ns0="http://thalesgroup.com/RTTI/2017-10-01/ldb/" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes"
+      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><com:AccessToken><com:TokenValue>55ede721-e99e-488b-9087-bcfb611f54f3</com:TokenValue></com:AccessToken></SOAP-ENV:Header><ns1:Body><ns0:GetServiceDetailsRequest><ns0:serviceID>UK1717agjCPD3J9oOeaHrQ==</ns0:serviceID></ns0:GetServiceDetailsRequest></ns1:Body></SOAP-ENV:Envelope>
+    headers:
+      Connection: [close]
+      Content-Length: ['643']
+      Content-Type: [text/xml; charset=utf-8]
+      Host: [lite.realtime.nationalrail.co.uk]
+      Soapaction: ['"http://thalesgroup.com/RTTI/2012-01-13/ldb/GetServiceDetails"']
+      User-Agent: [Python-urllib/2.7]
+    method: POST
+    uri: https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetServiceDetailsResponse
+        xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><GetServiceDetailsResult
+        xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+        xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+        xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+        xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types"><lt7:generatedAt>2019-01-04T13:39:02.945986+00:00</lt7:generatedAt><lt7:serviceType>train</lt7:serviceType><lt7:locationName>Blake
+        Street</lt7:locationName><lt7:crs>BKT</lt7:crs><lt7:operator>West Midlands
+        Trains</lt7:operator><lt7:operatorCode>LM</lt7:operatorCode><lt7:rsid>LM173900</lt7:rsid><lt7:platform>1</lt7:platform><lt7:sta>14:32</lt7:sta><lt7:eta>On
+        time</lt7:eta><lt7:std>14:32</lt7:std><lt7:etd>On time</lt7:etd><lt7:previousCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Lichfield
+        Trent Valley</lt7:locationName><lt7:crs>LTV</lt7:crs><lt7:st>14:20</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Lichfield
+        City</lt7:locationName><lt7:crs>LIC</lt7:crs><lt7:st>14:24</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Shenstone</lt7:locationName><lt7:crs>SEN</lt7:crs><lt7:st>14:29</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:previousCallingPoints><lt7:subsequentCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Butlers
+        Lane</lt7:locationName><lt7:crs>BUL</lt7:crs><lt7:st>14:33</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Four Oaks</lt7:locationName><lt7:crs>FOK</lt7:crs><lt7:st>14:36</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Sutton
+        Coldfield</lt7:locationName><lt7:crs>SUT</lt7:crs><lt7:st>14:40</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Wylde
+        Green</lt7:locationName><lt7:crs>WYL</lt7:crs><lt7:st>14:42</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Chester
+        Road</lt7:locationName><lt7:crs>CRD</lt7:crs><lt7:st>14:44</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Erdington</lt7:locationName><lt7:crs>ERD</lt7:crs><lt7:st>14:47</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Gravelly
+        Hill</lt7:locationName><lt7:crs>GVH</lt7:crs><lt7:st>14:49</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Aston</lt7:locationName><lt7:crs>AST</lt7:crs><lt7:st>14:52</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Birmingham
+        New Street</lt7:locationName><lt7:crs>BHM</lt7:crs><lt7:st>15:01</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Five Ways</lt7:locationName><lt7:crs>FWY</lt7:crs><lt7:st>15:06</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>University</lt7:locationName><lt7:crs>UNI</lt7:crs><lt7:st>15:10</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Selly
+        Oak</lt7:locationName><lt7:crs>SLY</lt7:crs><lt7:st>15:13</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bournville</lt7:locationName><lt7:crs>BRV</lt7:crs><lt7:st>15:16</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Kings
+        Norton</lt7:locationName><lt7:crs>KNN</lt7:crs><lt7:st>15:18</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Northfield</lt7:locationName><lt7:crs>NFD</lt7:crs><lt7:st>15:22</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Longbridge</lt7:locationName><lt7:crs>LOB</lt7:crs><lt7:st>15:24</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Barnt
+        Green</lt7:locationName><lt7:crs>BTG</lt7:crs><lt7:st>15:30</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Alvechurch</lt7:locationName><lt7:crs>ALV</lt7:crs><lt7:st>15:35</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Redditch</lt7:locationName><lt7:crs>RDC</lt7:crs><lt7:st>15:41</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:subsequentCallingPoints></GetServiceDetailsResult></GetServiceDetailsResponse></soap:Body></soap:Envelope>'}
+    headers:
+      cache-control: ['private, max-age=0']
+      connection: [Close]
+      content-length: ['4835']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Fri, 04 Jan 2019 13:39:02 GMT']
+      server: [Microsoft-IIS/10.0]
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+      x-server: [172.22.22.102]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope
+      xmlns:ns0="http://thalesgroup.com/RTTI/2017-10-01/ldb/" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes"
+      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><com:AccessToken><com:TokenValue>55ede721-e99e-488b-9087-bcfb611f54f3</com:TokenValue></com:AccessToken></SOAP-ENV:Header><ns1:Body><ns0:GetServiceDetailsRequest><ns0:serviceID>0tFQJWU0NTq/PzfNdTtGzQ==</ns0:serviceID></ns0:GetServiceDetailsRequest></ns1:Body></SOAP-ENV:Envelope>
+    headers:
+      Connection: [close]
+      Content-Length: ['643']
+      Content-Type: [text/xml; charset=utf-8]
+      Host: [lite.realtime.nationalrail.co.uk]
+      Soapaction: ['"http://thalesgroup.com/RTTI/2012-01-13/ldb/GetServiceDetails"']
+      User-Agent: [Python-urllib/2.7]
+    method: POST
+    uri: https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetServiceDetailsResponse
+        xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><GetServiceDetailsResult
+        xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+        xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+        xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+        xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types"><lt7:generatedAt>2019-01-04T13:39:03.0685319+00:00</lt7:generatedAt><lt7:serviceType>train</lt7:serviceType><lt7:locationName>Blake
+        Street</lt7:locationName><lt7:crs>BKT</lt7:crs><lt7:operator>West Midlands
+        Trains</lt7:operator><lt7:operatorCode>LM</lt7:operatorCode><lt7:rsid>LM144600</lt7:rsid><lt7:platform>2</lt7:platform><lt7:sta>14:33</lt7:sta><lt7:eta>On
+        time</lt7:eta><lt7:std>14:33</lt7:std><lt7:etd>On time</lt7:etd><lt7:previousCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Bromsgrove</lt7:locationName><lt7:crs>BMV</lt7:crs><lt7:st>13:30</lt7:st><lt7:at>On
+        time</lt7:at></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Longbridge</lt7:locationName><lt7:crs>LOB</lt7:crs><lt7:st>13:42</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Northfield</lt7:locationName><lt7:crs>NFD</lt7:crs><lt7:st>13:44</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Kings
+        Norton</lt7:locationName><lt7:crs>KNN</lt7:crs><lt7:st>13:47</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bournville</lt7:locationName><lt7:crs>BRV</lt7:crs><lt7:st>13:49</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Selly
+        Oak</lt7:locationName><lt7:crs>SLY</lt7:crs><lt7:st>13:52</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>University</lt7:locationName><lt7:crs>UNI</lt7:crs><lt7:st>13:55</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Five Ways</lt7:locationName><lt7:crs>FWY</lt7:crs><lt7:st>13:58</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Birmingham
+        New Street</lt7:locationName><lt7:crs>BHM</lt7:crs><lt7:st>14:05</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Aston</lt7:locationName><lt7:crs>AST</lt7:crs><lt7:st>14:11</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Gravelly
+        Hill</lt7:locationName><lt7:crs>GVH</lt7:crs><lt7:st>14:14</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Erdington</lt7:locationName><lt7:crs>ERD</lt7:crs><lt7:st>14:17</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Chester
+        Road</lt7:locationName><lt7:crs>CRD</lt7:crs><lt7:st>14:19</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Wylde
+        Green</lt7:locationName><lt7:crs>WYL</lt7:crs><lt7:st>14:22</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Sutton
+        Coldfield</lt7:locationName><lt7:crs>SUT</lt7:crs><lt7:st>14:25</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Four Oaks</lt7:locationName><lt7:crs>FOK</lt7:crs><lt7:st>14:28</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Butlers
+        Lane</lt7:locationName><lt7:crs>BUL</lt7:crs><lt7:st>14:31</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:previousCallingPoints><lt7:subsequentCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Lichfield
+        City</lt7:locationName><lt7:crs>LIC</lt7:crs><lt7:st>14:41</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:subsequentCallingPoints></GetServiceDetailsResult></GetServiceDetailsResponse></soap:Body></soap:Envelope>'}
+    headers:
+      cache-control: ['private, max-age=0']
+      connection: [Close]
+      content-length: ['4218']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Fri, 04 Jan 2019 13:39:02 GMT']
+      server: [Microsoft-IIS/10.0]
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+      x-server: [172.22.22.31]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope
+      xmlns:ns0="http://thalesgroup.com/RTTI/2017-10-01/ldb/" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes"
+      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><com:AccessToken><com:TokenValue>55ede721-e99e-488b-9087-bcfb611f54f3</com:TokenValue></com:AccessToken></SOAP-ENV:Header><ns1:Body><ns0:GetServiceDetailsRequest><ns0:serviceID>SLfeHB7v7H6AezlgdJ3ong==</ns0:serviceID></ns0:GetServiceDetailsRequest></ns1:Body></SOAP-ENV:Envelope>
+    headers:
+      Connection: [close]
+      Content-Length: ['643']
+      Content-Type: [text/xml; charset=utf-8]
+      Host: [lite.realtime.nationalrail.co.uk]
+      Soapaction: ['"http://thalesgroup.com/RTTI/2012-01-13/ldb/GetServiceDetails"']
+      User-Agent: [Python-urllib/2.7]
+    method: POST
+    uri: https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetServiceDetailsResponse
+        xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><GetServiceDetailsResult
+        xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+        xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+        xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+        xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types"><lt7:generatedAt>2019-01-04T13:39:03.2091553+00:00</lt7:generatedAt><lt7:serviceType>train</lt7:serviceType><lt7:locationName>Blake
+        Street</lt7:locationName><lt7:crs>BKT</lt7:crs><lt7:operator>West Midlands
+        Trains</lt7:operator><lt7:operatorCode>LM</lt7:operatorCode><lt7:rsid>LM174000</lt7:rsid><lt7:platform>1</lt7:platform><lt7:sta>14:52</lt7:sta><lt7:eta>On
+        time</lt7:eta><lt7:std>14:52</lt7:std><lt7:etd>On time</lt7:etd><lt7:previousCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Lichfield
+        City</lt7:locationName><lt7:crs>LIC</lt7:crs><lt7:st>14:46</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:previousCallingPoints><lt7:subsequentCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Butlers
+        Lane</lt7:locationName><lt7:crs>BUL</lt7:crs><lt7:st>14:54</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Four Oaks</lt7:locationName><lt7:crs>FOK</lt7:crs><lt7:st>14:56</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Sutton
+        Coldfield</lt7:locationName><lt7:crs>SUT</lt7:crs><lt7:st>15:00</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Wylde
+        Green</lt7:locationName><lt7:crs>WYL</lt7:crs><lt7:st>15:02</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Chester
+        Road</lt7:locationName><lt7:crs>CRD</lt7:crs><lt7:st>15:04</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Erdington</lt7:locationName><lt7:crs>ERD</lt7:crs><lt7:st>15:06</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Gravelly
+        Hill</lt7:locationName><lt7:crs>GVH</lt7:crs><lt7:st>15:09</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Aston</lt7:locationName><lt7:crs>AST</lt7:crs><lt7:st>15:13</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Birmingham
+        New Street</lt7:locationName><lt7:crs>BHM</lt7:crs><lt7:st>15:21</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Five Ways</lt7:locationName><lt7:crs>FWY</lt7:crs><lt7:st>15:26</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>University</lt7:locationName><lt7:crs>UNI</lt7:crs><lt7:st>15:30</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Selly
+        Oak</lt7:locationName><lt7:crs>SLY</lt7:crs><lt7:st>15:33</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bournville</lt7:locationName><lt7:crs>BRV</lt7:crs><lt7:st>15:36</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Kings
+        Norton</lt7:locationName><lt7:crs>KNN</lt7:crs><lt7:st>15:38</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Northfield</lt7:locationName><lt7:crs>NFD</lt7:crs><lt7:st>15:42</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Longbridge</lt7:locationName><lt7:crs>LOB</lt7:crs><lt7:st>15:44</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Barnt
+        Green</lt7:locationName><lt7:crs>BTG</lt7:crs><lt7:st>15:50</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Alvechurch</lt7:locationName><lt7:crs>ALV</lt7:crs><lt7:st>15:55</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Redditch</lt7:locationName><lt7:crs>RDC</lt7:crs><lt7:st>16:03</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:subsequentCallingPoints></GetServiceDetailsResult></GetServiceDetailsResponse></soap:Body></soap:Envelope>'}
+    headers:
+      cache-control: ['private, max-age=0']
+      connection: [Close]
+      content-length: ['4521']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Fri, 04 Jan 2019 13:39:02 GMT']
+      server: [Microsoft-IIS/10.0]
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+      x-server: [172.22.22.31]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope
+      xmlns:ns0="http://thalesgroup.com/RTTI/2017-10-01/ldb/" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes"
+      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><com:AccessToken><com:TokenValue>55ede721-e99e-488b-9087-bcfb611f54f3</com:TokenValue></com:AccessToken></SOAP-ENV:Header><ns1:Body><ns0:GetServiceDetailsRequest><ns0:serviceID>f/3K0nz8euy5Z7X8g1Y2vw==</ns0:serviceID></ns0:GetServiceDetailsRequest></ns1:Body></SOAP-ENV:Envelope>
+    headers:
+      Connection: [close]
+      Content-Length: ['643']
+      Content-Type: [text/xml; charset=utf-8]
+      Host: [lite.realtime.nationalrail.co.uk]
+      Soapaction: ['"http://thalesgroup.com/RTTI/2012-01-13/ldb/GetServiceDetails"']
+      User-Agent: [Python-urllib/2.7]
+    method: POST
+    uri: https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetServiceDetailsResponse
+        xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><GetServiceDetailsResult
+        xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+        xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+        xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+        xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types"><lt7:generatedAt>2019-01-04T13:39:03.3209968+00:00</lt7:generatedAt><lt7:serviceType>train</lt7:serviceType><lt7:locationName>Blake
+        Street</lt7:locationName><lt7:crs>BKT</lt7:crs><lt7:operator>West Midlands
+        Trains</lt7:operator><lt7:operatorCode>LM</lt7:operatorCode><lt7:rsid>LM159400</lt7:rsid><lt7:platform>2</lt7:platform><lt7:sta>14:53</lt7:sta><lt7:eta>On
+        time</lt7:eta><lt7:std>14:53</lt7:std><lt7:etd>On time</lt7:etd><lt7:previousCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Bromsgrove</lt7:locationName><lt7:crs>BMV</lt7:crs><lt7:st>13:51</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Barnt
+        Green</lt7:locationName><lt7:crs>BTG</lt7:crs><lt7:st>13:57</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Longbridge</lt7:locationName><lt7:crs>LOB</lt7:crs><lt7:st>14:02</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Northfield</lt7:locationName><lt7:crs>NFD</lt7:crs><lt7:st>14:04</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Kings
+        Norton</lt7:locationName><lt7:crs>KNN</lt7:crs><lt7:st>14:07</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bournville</lt7:locationName><lt7:crs>BRV</lt7:crs><lt7:st>14:09</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Selly
+        Oak</lt7:locationName><lt7:crs>SLY</lt7:crs><lt7:st>14:12</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>University</lt7:locationName><lt7:crs>UNI</lt7:crs><lt7:st>14:15</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Five Ways</lt7:locationName><lt7:crs>FWY</lt7:crs><lt7:st>14:18</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Birmingham
+        New Street</lt7:locationName><lt7:crs>BHM</lt7:crs><lt7:st>14:25</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Aston</lt7:locationName><lt7:crs>AST</lt7:crs><lt7:st>14:31</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Gravelly
+        Hill</lt7:locationName><lt7:crs>GVH</lt7:crs><lt7:st>14:34</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Erdington</lt7:locationName><lt7:crs>ERD</lt7:crs><lt7:st>14:37</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Chester
+        Road</lt7:locationName><lt7:crs>CRD</lt7:crs><lt7:st>14:39</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Wylde
+        Green</lt7:locationName><lt7:crs>WYL</lt7:crs><lt7:st>14:42</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Sutton
+        Coldfield</lt7:locationName><lt7:crs>SUT</lt7:crs><lt7:st>14:45</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Four Oaks</lt7:locationName><lt7:crs>FOK</lt7:crs><lt7:st>14:48</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Butlers
+        Lane</lt7:locationName><lt7:crs>BUL</lt7:crs><lt7:st>14:51</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:previousCallingPoints><lt7:subsequentCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Shenstone</lt7:locationName><lt7:crs>SEN</lt7:crs><lt7:st>14:56</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Lichfield
+        City</lt7:locationName><lt7:crs>LIC</lt7:crs><lt7:st>15:02</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Lichfield
+        Trent Valley</lt7:locationName><lt7:crs>LTV</lt7:crs><lt7:st>15:05</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:subsequentCallingPoints></GetServiceDetailsResult></GetServiceDetailsResponse></soap:Body></soap:Envelope>'}
+    headers:
+      cache-control: ['private, max-age=0']
+      connection: [Close]
+      content-length: ['4686']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Fri, 04 Jan 2019 13:39:03 GMT']
+      server: [Microsoft-IIS/10.0]
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+      x-server: [172.22.22.102]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope
+      xmlns:ns0="http://thalesgroup.com/RTTI/2017-10-01/ldb/" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes"
+      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><com:AccessToken><com:TokenValue>55ede721-e99e-488b-9087-bcfb611f54f3</com:TokenValue></com:AccessToken></SOAP-ENV:Header><ns1:Body><ns0:GetServiceDetailsRequest><ns0:serviceID>J+RKZnn02MEN0vqJ+aTg6w==</ns0:serviceID></ns0:GetServiceDetailsRequest></ns1:Body></SOAP-ENV:Envelope>
+    headers:
+      Connection: [close]
+      Content-Length: ['643']
+      Content-Type: [text/xml; charset=utf-8]
+      Host: [lite.realtime.nationalrail.co.uk]
+      Soapaction: ['"http://thalesgroup.com/RTTI/2012-01-13/ldb/GetServiceDetails"']
+      User-Agent: [Python-urllib/2.7]
+    method: POST
+    uri: https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetServiceDetailsResponse
+        xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><GetServiceDetailsResult
+        xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+        xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+        xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+        xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types"><lt7:generatedAt>2019-01-04T13:39:03.4459918+00:00</lt7:generatedAt><lt7:serviceType>train</lt7:serviceType><lt7:locationName>Blake
+        Street</lt7:locationName><lt7:crs>BKT</lt7:crs><lt7:operator>West Midlands
+        Trains</lt7:operator><lt7:operatorCode>LM</lt7:operatorCode><lt7:rsid>LM104300</lt7:rsid><lt7:platform>1</lt7:platform><lt7:sta>15:02</lt7:sta><lt7:eta>On
+        time</lt7:eta><lt7:std>15:02</lt7:std><lt7:etd>On time</lt7:etd><lt7:previousCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Lichfield
+        Trent Valley</lt7:locationName><lt7:crs>LTV</lt7:crs><lt7:st>14:50</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Lichfield
+        City</lt7:locationName><lt7:crs>LIC</lt7:crs><lt7:st>14:54</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Shenstone</lt7:locationName><lt7:crs>SEN</lt7:crs><lt7:st>14:59</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:previousCallingPoints><lt7:subsequentCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Butlers
+        Lane</lt7:locationName><lt7:crs>BUL</lt7:crs><lt7:st>15:03</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Four Oaks</lt7:locationName><lt7:crs>FOK</lt7:crs><lt7:st>15:06</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Sutton
+        Coldfield</lt7:locationName><lt7:crs>SUT</lt7:crs><lt7:st>15:10</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Wylde
+        Green</lt7:locationName><lt7:crs>WYL</lt7:crs><lt7:st>15:12</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Chester
+        Road</lt7:locationName><lt7:crs>CRD</lt7:crs><lt7:st>15:14</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Erdington</lt7:locationName><lt7:crs>ERD</lt7:crs><lt7:st>15:17</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Gravelly
+        Hill</lt7:locationName><lt7:crs>GVH</lt7:crs><lt7:st>15:19</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Aston</lt7:locationName><lt7:crs>AST</lt7:crs><lt7:st>15:23</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Birmingham
+        New Street</lt7:locationName><lt7:crs>BHM</lt7:crs><lt7:st>15:31</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Five Ways</lt7:locationName><lt7:crs>FWY</lt7:crs><lt7:st>15:36</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>University</lt7:locationName><lt7:crs>UNI</lt7:crs><lt7:st>15:40</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Selly
+        Oak</lt7:locationName><lt7:crs>SLY</lt7:crs><lt7:st>15:43</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bournville</lt7:locationName><lt7:crs>BRV</lt7:crs><lt7:st>15:46</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Kings
+        Norton</lt7:locationName><lt7:crs>KNN</lt7:crs><lt7:st>15:48</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Northfield</lt7:locationName><lt7:crs>NFD</lt7:crs><lt7:st>15:52</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Longbridge</lt7:locationName><lt7:crs>LOB</lt7:crs><lt7:st>15:54</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bromsgrove</lt7:locationName><lt7:crs>BMV</lt7:crs><lt7:st>16:07</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:subsequentCallingPoints></GetServiceDetailsResult></GetServiceDetailsResponse></soap:Body></soap:Envelope>'}
+    headers:
+      cache-control: ['private, max-age=0']
+      connection: [Close]
+      content-length: ['4533']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Fri, 04 Jan 2019 13:39:03 GMT']
+      server: [Microsoft-IIS/10.0]
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+      x-server: [172.22.22.102]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope
+      xmlns:ns0="http://thalesgroup.com/RTTI/2017-10-01/ldb/" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes"
+      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><com:AccessToken><com:TokenValue>55ede721-e99e-488b-9087-bcfb611f54f3</com:TokenValue></com:AccessToken></SOAP-ENV:Header><ns1:Body><ns0:GetServiceDetailsRequest><ns0:serviceID>JuEhqYpARtPOcc3QkKQMQQ==</ns0:serviceID></ns0:GetServiceDetailsRequest></ns1:Body></SOAP-ENV:Envelope>
+    headers:
+      Connection: [close]
+      Content-Length: ['643']
+      Content-Type: [text/xml; charset=utf-8]
+      Host: [lite.realtime.nationalrail.co.uk]
+      Soapaction: ['"http://thalesgroup.com/RTTI/2012-01-13/ldb/GetServiceDetails"']
+      User-Agent: [Python-urllib/2.7]
+    method: POST
+    uri: https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetServiceDetailsResponse
+        xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><GetServiceDetailsResult
+        xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+        xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+        xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+        xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types"><lt7:generatedAt>2019-01-04T13:39:03.5841602+00:00</lt7:generatedAt><lt7:serviceType>train</lt7:serviceType><lt7:locationName>Blake
+        Street</lt7:locationName><lt7:crs>BKT</lt7:crs><lt7:operator>West Midlands
+        Trains</lt7:operator><lt7:operatorCode>LM</lt7:operatorCode><lt7:rsid>LM144700</lt7:rsid><lt7:platform>2</lt7:platform><lt7:sta>15:03</lt7:sta><lt7:eta>On
+        time</lt7:eta><lt7:std>15:03</lt7:std><lt7:etd>On time</lt7:etd><lt7:previousCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Redditch</lt7:locationName><lt7:crs>RDC</lt7:crs><lt7:st>13:55</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Alvechurch</lt7:locationName><lt7:crs>ALV</lt7:crs><lt7:st>14:00</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Barnt
+        Green</lt7:locationName><lt7:crs>BTG</lt7:crs><lt7:st>14:07</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Longbridge</lt7:locationName><lt7:crs>LOB</lt7:crs><lt7:st>14:12</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Northfield</lt7:locationName><lt7:crs>NFD</lt7:crs><lt7:st>14:14</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Kings
+        Norton</lt7:locationName><lt7:crs>KNN</lt7:crs><lt7:st>14:17</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bournville</lt7:locationName><lt7:crs>BRV</lt7:crs><lt7:st>14:19</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Selly
+        Oak</lt7:locationName><lt7:crs>SLY</lt7:crs><lt7:st>14:22</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>University</lt7:locationName><lt7:crs>UNI</lt7:crs><lt7:st>14:25</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Five Ways</lt7:locationName><lt7:crs>FWY</lt7:crs><lt7:st>14:28</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Birmingham
+        New Street</lt7:locationName><lt7:crs>BHM</lt7:crs><lt7:st>14:35</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Aston</lt7:locationName><lt7:crs>AST</lt7:crs><lt7:st>14:41</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Gravelly
+        Hill</lt7:locationName><lt7:crs>GVH</lt7:crs><lt7:st>14:44</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Erdington</lt7:locationName><lt7:crs>ERD</lt7:crs><lt7:st>14:47</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Chester
+        Road</lt7:locationName><lt7:crs>CRD</lt7:crs><lt7:st>14:49</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Wylde
+        Green</lt7:locationName><lt7:crs>WYL</lt7:crs><lt7:st>14:52</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Sutton
+        Coldfield</lt7:locationName><lt7:crs>SUT</lt7:crs><lt7:st>14:55</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Four Oaks</lt7:locationName><lt7:crs>FOK</lt7:crs><lt7:st>14:58</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Butlers
+        Lane</lt7:locationName><lt7:crs>BUL</lt7:crs><lt7:st>15:01</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:previousCallingPoints><lt7:subsequentCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Lichfield
+        City</lt7:locationName><lt7:crs>LIC</lt7:crs><lt7:st>15:11</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:subsequentCallingPoints></GetServiceDetailsResult></GetServiceDetailsResponse></soap:Body></soap:Envelope>'}
+    headers:
+      cache-control: ['private, max-age=0']
+      connection: [Close]
+      content-length: ['4521']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Fri, 04 Jan 2019 13:39:02 GMT']
+      server: [Microsoft-IIS/10.0]
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+      x-server: [172.22.22.31]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope
+      xmlns:ns0="http://thalesgroup.com/RTTI/2017-10-01/ldb/" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes"
+      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><com:AccessToken><com:TokenValue>55ede721-e99e-488b-9087-bcfb611f54f3</com:TokenValue></com:AccessToken></SOAP-ENV:Header><ns1:Body><ns0:GetServiceDetailsRequest><ns0:serviceID>t5Og/dId8ZWktdgesLhvBA==</ns0:serviceID></ns0:GetServiceDetailsRequest></ns1:Body></SOAP-ENV:Envelope>
+    headers:
+      Connection: [close]
+      Content-Length: ['643']
+      Content-Type: [text/xml; charset=utf-8]
+      Host: [lite.realtime.nationalrail.co.uk]
+      Soapaction: ['"http://thalesgroup.com/RTTI/2012-01-13/ldb/GetServiceDetails"']
+      User-Agent: [Python-urllib/2.7]
+    method: POST
+    uri: https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetServiceDetailsResponse
+        xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><GetServiceDetailsResult
+        xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+        xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+        xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+        xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types"><lt7:generatedAt>2019-01-04T13:39:03.7091596+00:00</lt7:generatedAt><lt7:serviceType>train</lt7:serviceType><lt7:locationName>Blake
+        Street</lt7:locationName><lt7:crs>BKT</lt7:crs><lt7:operator>West Midlands
+        Trains</lt7:operator><lt7:operatorCode>LM</lt7:operatorCode><lt7:rsid>LM104600</lt7:rsid><lt7:sta>15:22</lt7:sta><lt7:eta>On
+        time</lt7:eta><lt7:std>15:22</lt7:std><lt7:etd>On time</lt7:etd><lt7:previousCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Lichfield
+        City</lt7:locationName><lt7:crs>LIC</lt7:crs><lt7:st>15:16</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:previousCallingPoints><lt7:subsequentCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Butlers
+        Lane</lt7:locationName><lt7:crs>BUL</lt7:crs><lt7:st>15:24</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Four Oaks</lt7:locationName><lt7:crs>FOK</lt7:crs><lt7:st>15:26</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Sutton
+        Coldfield</lt7:locationName><lt7:crs>SUT</lt7:crs><lt7:st>15:30</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Wylde
+        Green</lt7:locationName><lt7:crs>WYL</lt7:crs><lt7:st>15:32</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Chester
+        Road</lt7:locationName><lt7:crs>CRD</lt7:crs><lt7:st>15:34</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Erdington</lt7:locationName><lt7:crs>ERD</lt7:crs><lt7:st>15:37</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Gravelly
+        Hill</lt7:locationName><lt7:crs>GVH</lt7:crs><lt7:st>15:39</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Aston</lt7:locationName><lt7:crs>AST</lt7:crs><lt7:st>15:43</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Birmingham
+        New Street</lt7:locationName><lt7:crs>BHM</lt7:crs><lt7:st>15:50</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Five Ways</lt7:locationName><lt7:crs>FWY</lt7:crs><lt7:st>15:56</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>University</lt7:locationName><lt7:crs>UNI</lt7:crs><lt7:st>16:00</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Selly
+        Oak</lt7:locationName><lt7:crs>SLY</lt7:crs><lt7:st>16:03</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bournville</lt7:locationName><lt7:crs>BRV</lt7:crs><lt7:st>16:06</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Kings
+        Norton</lt7:locationName><lt7:crs>KNN</lt7:crs><lt7:st>16:08</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Northfield</lt7:locationName><lt7:crs>NFD</lt7:crs><lt7:st>16:12</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Longbridge</lt7:locationName><lt7:crs>LOB</lt7:crs><lt7:st>16:14</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Barnt
+        Green</lt7:locationName><lt7:crs>BTG</lt7:crs><lt7:st>16:19</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bromsgrove</lt7:locationName><lt7:crs>BMV</lt7:crs><lt7:st>16:25</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:subsequentCallingPoints></GetServiceDetailsResult></GetServiceDetailsResponse></soap:Body></soap:Envelope>'}
+    headers:
+      cache-control: ['private, max-age=0']
+      connection: [Close]
+      content-length: ['4341']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Fri, 04 Jan 2019 13:39:02 GMT']
+      server: [Microsoft-IIS/10.0]
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+      x-server: [172.22.22.31]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope
+      xmlns:ns0="http://thalesgroup.com/RTTI/2017-10-01/ldb/" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes"
+      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><com:AccessToken><com:TokenValue>55ede721-e99e-488b-9087-bcfb611f54f3</com:TokenValue></com:AccessToken></SOAP-ENV:Header><ns1:Body><ns0:GetServiceDetailsRequest><ns0:serviceID>HSVKtrxeidF6xN4yMTO51w==</ns0:serviceID></ns0:GetServiceDetailsRequest></ns1:Body></SOAP-ENV:Envelope>
+    headers:
+      Connection: [close]
+      Content-Length: ['643']
+      Content-Type: [text/xml; charset=utf-8]
+      Host: [lite.realtime.nationalrail.co.uk]
+      Soapaction: ['"http://thalesgroup.com/RTTI/2012-01-13/ldb/GetServiceDetails"']
+      User-Agent: [Python-urllib/2.7]
+    method: POST
+    uri: https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetServiceDetailsResponse
+        xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><GetServiceDetailsResult
+        xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+        xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+        xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+        xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types"><lt7:generatedAt>2019-01-04T13:39:03.8222214+00:00</lt7:generatedAt><lt7:serviceType>train</lt7:serviceType><lt7:locationName>Blake
+        Street</lt7:locationName><lt7:crs>BKT</lt7:crs><lt7:operator>West Midlands
+        Trains</lt7:operator><lt7:operatorCode>LM</lt7:operatorCode><lt7:rsid>LM160100</lt7:rsid><lt7:sta>15:23</lt7:sta><lt7:eta>On
+        time</lt7:eta><lt7:std>15:23</lt7:std><lt7:etd>On time</lt7:etd><lt7:previousCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Redditch</lt7:locationName><lt7:crs>RDC</lt7:crs><lt7:st>14:12</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Alvechurch</lt7:locationName><lt7:crs>ALV</lt7:crs><lt7:st>14:17</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Barnt
+        Green</lt7:locationName><lt7:crs>BTG</lt7:crs><lt7:st>14:23</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Longbridge</lt7:locationName><lt7:crs>LOB</lt7:crs><lt7:st>14:32</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Northfield</lt7:locationName><lt7:crs>NFD</lt7:crs><lt7:st>14:34</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Kings
+        Norton</lt7:locationName><lt7:crs>KNN</lt7:crs><lt7:st>14:37</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bournville</lt7:locationName><lt7:crs>BRV</lt7:crs><lt7:st>14:39</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Selly
+        Oak</lt7:locationName><lt7:crs>SLY</lt7:crs><lt7:st>14:42</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>University</lt7:locationName><lt7:crs>UNI</lt7:crs><lt7:st>14:45</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Five Ways</lt7:locationName><lt7:crs>FWY</lt7:crs><lt7:st>14:48</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Birmingham
+        New Street</lt7:locationName><lt7:crs>BHM</lt7:crs><lt7:st>14:55</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Aston</lt7:locationName><lt7:crs>AST</lt7:crs><lt7:st>15:01</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Gravelly
+        Hill</lt7:locationName><lt7:crs>GVH</lt7:crs><lt7:st>15:04</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Erdington</lt7:locationName><lt7:crs>ERD</lt7:crs><lt7:st>15:07</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Chester
+        Road</lt7:locationName><lt7:crs>CRD</lt7:crs><lt7:st>15:09</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Wylde
+        Green</lt7:locationName><lt7:crs>WYL</lt7:crs><lt7:st>15:12</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Sutton
+        Coldfield</lt7:locationName><lt7:crs>SUT</lt7:crs><lt7:st>15:15</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Four Oaks</lt7:locationName><lt7:crs>FOK</lt7:crs><lt7:st>15:18</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Butlers
+        Lane</lt7:locationName><lt7:crs>BUL</lt7:crs><lt7:st>15:21</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:previousCallingPoints><lt7:subsequentCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Shenstone</lt7:locationName><lt7:crs>SEN</lt7:crs><lt7:st>15:26</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Lichfield
+        City</lt7:locationName><lt7:crs>LIC</lt7:crs><lt7:st>15:32</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Lichfield
+        Trent Valley</lt7:locationName><lt7:crs>LTV</lt7:crs><lt7:st>15:35</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:subsequentCallingPoints></GetServiceDetailsResult></GetServiceDetailsResponse></soap:Body></soap:Envelope>'}
+    headers:
+      cache-control: ['private, max-age=0']
+      connection: [Close]
+      content-length: ['4806']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Fri, 04 Jan 2019 13:39:03 GMT']
+      server: [Microsoft-IIS/10.0]
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+      x-server: [172.22.22.102]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope
+      xmlns:ns0="http://thalesgroup.com/RTTI/2017-10-01/ldb/" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes"
+      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><com:AccessToken><com:TokenValue>55ede721-e99e-488b-9087-bcfb611f54f3</com:TokenValue></com:AccessToken></SOAP-ENV:Header><ns1:Body><ns0:GetServiceDetailsRequest><ns0:serviceID>ydY3UepFd1Zim0QuhOWOmg==</ns0:serviceID></ns0:GetServiceDetailsRequest></ns1:Body></SOAP-ENV:Envelope>
+    headers:
+      Connection: [close]
+      Content-Length: ['643']
+      Content-Type: [text/xml; charset=utf-8]
+      Host: [lite.realtime.nationalrail.co.uk]
+      Soapaction: ['"http://thalesgroup.com/RTTI/2012-01-13/ldb/GetServiceDetails"']
+      User-Agent: [Python-urllib/2.7]
+    method: POST
+    uri: https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetServiceDetailsResponse
+        xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><GetServiceDetailsResult
+        xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+        xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+        xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+        xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types"><lt7:generatedAt>2019-01-04T13:39:03.9603703+00:00</lt7:generatedAt><lt7:serviceType>train</lt7:serviceType><lt7:locationName>Blake
+        Street</lt7:locationName><lt7:crs>BKT</lt7:crs><lt7:operator>West Midlands
+        Trains</lt7:operator><lt7:operatorCode>LM</lt7:operatorCode><lt7:rsid>LM174200</lt7:rsid><lt7:sta>15:32</lt7:sta><lt7:eta>On
+        time</lt7:eta><lt7:std>15:32</lt7:std><lt7:etd>On time</lt7:etd><lt7:previousCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Lichfield
+        Trent Valley</lt7:locationName><lt7:crs>LTV</lt7:crs><lt7:st>15:20</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Lichfield
+        City</lt7:locationName><lt7:crs>LIC</lt7:crs><lt7:st>15:24</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Shenstone</lt7:locationName><lt7:crs>SEN</lt7:crs><lt7:st>15:29</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:previousCallingPoints><lt7:subsequentCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Butlers
+        Lane</lt7:locationName><lt7:crs>BUL</lt7:crs><lt7:st>15:33</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Four Oaks</lt7:locationName><lt7:crs>FOK</lt7:crs><lt7:st>15:36</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Sutton
+        Coldfield</lt7:locationName><lt7:crs>SUT</lt7:crs><lt7:st>15:40</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Wylde
+        Green</lt7:locationName><lt7:crs>WYL</lt7:crs><lt7:st>15:42</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Chester
+        Road</lt7:locationName><lt7:crs>CRD</lt7:crs><lt7:st>15:44</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Erdington</lt7:locationName><lt7:crs>ERD</lt7:crs><lt7:st>15:47</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Gravelly
+        Hill</lt7:locationName><lt7:crs>GVH</lt7:crs><lt7:st>15:49</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Aston</lt7:locationName><lt7:crs>AST</lt7:crs><lt7:st>15:52</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Birmingham
+        New Street</lt7:locationName><lt7:crs>BHM</lt7:crs><lt7:st>16:00</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Five Ways</lt7:locationName><lt7:crs>FWY</lt7:crs><lt7:st>16:06</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>University</lt7:locationName><lt7:crs>UNI</lt7:crs><lt7:st>16:10</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Selly
+        Oak</lt7:locationName><lt7:crs>SLY</lt7:crs><lt7:st>16:13</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bournville</lt7:locationName><lt7:crs>BRV</lt7:crs><lt7:st>16:16</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Kings
+        Norton</lt7:locationName><lt7:crs>KNN</lt7:crs><lt7:st>16:18</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Northfield</lt7:locationName><lt7:crs>NFD</lt7:crs><lt7:st>16:22</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Longbridge</lt7:locationName><lt7:crs>LOB</lt7:crs><lt7:st>16:24</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Barnt
+        Green</lt7:locationName><lt7:crs>BTG</lt7:crs><lt7:st>16:30</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Alvechurch</lt7:locationName><lt7:crs>ALV</lt7:crs><lt7:st>16:35</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Redditch</lt7:locationName><lt7:crs>RDC</lt7:crs><lt7:st>16:41</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:subsequentCallingPoints></GetServiceDetailsResult></GetServiceDetailsResponse></soap:Body></soap:Envelope>'}
+    headers:
+      cache-control: ['private, max-age=0']
+      connection: [Close]
+      content-length: ['4806']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Fri, 04 Jan 2019 13:39:03 GMT']
+      server: [Microsoft-IIS/10.0]
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+      x-server: [172.22.22.31]
+    status: {code: 200, message: OK}
+- request:
+    body: !!python/unicode <?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope
+      xmlns:ns0="http://thalesgroup.com/RTTI/2017-10-01/ldb/" xmlns:ns1="http://schemas.xmlsoap.org/soap/envelope/"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com="http://thalesgroup.com/RTTI/2010-11-01/ldb/commontypes"
+      xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header><com:AccessToken><com:TokenValue>55ede721-e99e-488b-9087-bcfb611f54f3</com:TokenValue></com:AccessToken></SOAP-ENV:Header><ns1:Body><ns0:GetServiceDetailsRequest><ns0:serviceID>ZbbGn5vzydzfOmYCY8zJUA==</ns0:serviceID></ns0:GetServiceDetailsRequest></ns1:Body></SOAP-ENV:Envelope>
+    headers:
+      Connection: [close]
+      Content-Length: ['643']
+      Content-Type: [text/xml; charset=utf-8]
+      Host: [lite.realtime.nationalrail.co.uk]
+      Soapaction: ['"http://thalesgroup.com/RTTI/2012-01-13/ldb/GetServiceDetails"']
+      User-Agent: [Python-urllib/2.7]
+    method: POST
+    uri: https://lite.realtime.nationalrail.co.uk/OpenLDBWS/ldb11.asmx
+  response:
+    body: {string: !!python/unicode '<?xml version="1.0" encoding="utf-8"?><soap:Envelope
+        xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:xsd="http://www.w3.org/2001/XMLSchema"><soap:Body><GetServiceDetailsResponse
+        xmlns="http://thalesgroup.com/RTTI/2017-10-01/ldb/"><GetServiceDetailsResult
+        xmlns:lt="http://thalesgroup.com/RTTI/2012-01-13/ldb/types" xmlns:lt6="http://thalesgroup.com/RTTI/2017-02-02/ldb/types"
+        xmlns:lt7="http://thalesgroup.com/RTTI/2017-10-01/ldb/types" xmlns:lt4="http://thalesgroup.com/RTTI/2015-11-27/ldb/types"
+        xmlns:lt5="http://thalesgroup.com/RTTI/2016-02-16/ldb/types" xmlns:lt2="http://thalesgroup.com/RTTI/2014-02-20/ldb/types"
+        xmlns:lt3="http://thalesgroup.com/RTTI/2015-05-14/ldb/types"><lt7:generatedAt>2019-01-04T13:39:04.0722179+00:00</lt7:generatedAt><lt7:serviceType>train</lt7:serviceType><lt7:locationName>Blake
+        Street</lt7:locationName><lt7:crs>BKT</lt7:crs><lt7:operator>West Midlands
+        Trains</lt7:operator><lt7:operatorCode>LM</lt7:operatorCode><lt7:rsid>LM144800</lt7:rsid><lt7:sta>15:33</lt7:sta><lt7:eta>On
+        time</lt7:eta><lt7:std>15:33</lt7:std><lt7:etd>On time</lt7:etd><lt7:previousCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Bromsgrove</lt7:locationName><lt7:crs>BMV</lt7:crs><lt7:st>14:30</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Longbridge</lt7:locationName><lt7:crs>LOB</lt7:crs><lt7:st>14:42</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Northfield</lt7:locationName><lt7:crs>NFD</lt7:crs><lt7:st>14:44</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Kings
+        Norton</lt7:locationName><lt7:crs>KNN</lt7:crs><lt7:st>14:47</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Bournville</lt7:locationName><lt7:crs>BRV</lt7:crs><lt7:st>14:49</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Selly
+        Oak</lt7:locationName><lt7:crs>SLY</lt7:crs><lt7:st>14:52</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>University</lt7:locationName><lt7:crs>UNI</lt7:crs><lt7:st>14:55</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Five Ways</lt7:locationName><lt7:crs>FWY</lt7:crs><lt7:st>14:58</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Birmingham
+        New Street</lt7:locationName><lt7:crs>BHM</lt7:crs><lt7:st>15:05</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Aston</lt7:locationName><lt7:crs>AST</lt7:crs><lt7:st>15:11</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Gravelly
+        Hill</lt7:locationName><lt7:crs>GVH</lt7:crs><lt7:st>15:14</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Erdington</lt7:locationName><lt7:crs>ERD</lt7:crs><lt7:st>15:17</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Chester
+        Road</lt7:locationName><lt7:crs>CRD</lt7:crs><lt7:st>15:19</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Wylde
+        Green</lt7:locationName><lt7:crs>WYL</lt7:crs><lt7:st>15:22</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Sutton
+        Coldfield</lt7:locationName><lt7:crs>SUT</lt7:crs><lt7:st>15:25</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Four Oaks</lt7:locationName><lt7:crs>FOK</lt7:crs><lt7:st>15:28</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint><lt7:callingPoint><lt7:locationName>Butlers
+        Lane</lt7:locationName><lt7:crs>BUL</lt7:crs><lt7:st>15:31</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:previousCallingPoints><lt7:subsequentCallingPoints><lt7:callingPointList><lt7:callingPoint><lt7:locationName>Lichfield
+        City</lt7:locationName><lt7:crs>LIC</lt7:crs><lt7:st>15:41</lt7:st><lt7:et>On
+        time</lt7:et></lt7:callingPoint></lt7:callingPointList></lt7:subsequentCallingPoints></GetServiceDetailsResult></GetServiceDetailsResponse></soap:Body></soap:Envelope>'}
+    headers:
+      cache-control: ['private, max-age=0']
+      connection: [Close]
+      content-length: ['4188']
+      content-type: [text/xml; charset=utf-8]
+      date: ['Fri, 04 Jan 2019 13:39:03 GMT']
+      server: [Microsoft-IIS/10.0]
+      x-aspnet-version: [4.0.30319]
+      x-powered-by: [ASP.NET]
+      x-server: [172.22.22.102]
+    status: {code: 200, message: OK}
+version: 1

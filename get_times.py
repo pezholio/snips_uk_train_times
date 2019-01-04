@@ -11,7 +11,10 @@ class GetTimes:
         
         if (departure != None):
             time = departure.std
-            return "The next train to %s is the %s" % (self.station_name(self.to), time)
+            response = "The next train to %s is the %s" % (self.station_name(self.to), time)
+            if (departure.etd != 'On time'):
+                response = response + ", expected to depart at %s" % (departure.etd)
+            return response
         else:
             return "Sorry, I couldn't find any departures for your stations"
     
