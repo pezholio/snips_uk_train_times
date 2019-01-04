@@ -6,6 +6,7 @@ from hermes_python.hermes import Hermes
 from hermes_python.ontology import *
 from nredarwin.webservice import DarwinLdbSession
 from get_times import GetTimes
+from station import Station
 
 import io
 
@@ -45,8 +46,14 @@ class TrainTimes(object):
             print '[Received] intent: {}'.format(intent_message.intent.intent_name)
             
             get_times = GetTimes(self.darwin_session, self.home_station_code, self.destination_code)
-                                                                                      
-            # if need to speak the execution result by tts
+            
+            hermes.publish_end_session(intent_message.session_id, get_times.response())
+        else if intent_message.intent.intent_name == 'pezholio:next_train_to_station':
+            print '[Received] intent: {}'.format(intent_message.intent.intent_name)
+            
+            station = Station.find_by_name(intent_message.slots[0].value.value)
+            get_times = GetTimes(self.darwin_session, self.home_station_code, station.code)
+                                                                                
             hermes.publish_end_session(intent_message.session_id, get_times.response())
         else:
             return
