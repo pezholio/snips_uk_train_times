@@ -1,5 +1,5 @@
 ## Snips UK Train Times
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/snipsco/snips-app-template-py/blob/master/LICENSE)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/snipsco/snips-app-template-py/blob/master/LICENSE) [![CircleCI](https://circleci.com/gh/pezholio/snips_uk_train_times.svg?style=svg)](https://circleci.com/gh/pezholio/snips_uk_train_times)
 
 A Snips App using the [National Rail Enquiries Darwin API](http://www.nationalrail.co.uk/100296.aspx) to get the latest train times.
 
