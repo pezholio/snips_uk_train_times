@@ -23,7 +23,3 @@ class TestGetTimes(object):
     def test_with_delay(self):
         times = get_times.GetTimes(self.darwin_session(), 'BKT', 'BHM')
         assert times.response() == 'The next train to Birmingham New Street is the 13:52, expected to depart at 13:55'
-    
-    def test_gets_station_name(self):
-        times = get_times.GetTimes(self.darwin_session(), 'BKT', 'BHM')
-        assert times.station_name('BHM') == 'Birmingham New Street'
