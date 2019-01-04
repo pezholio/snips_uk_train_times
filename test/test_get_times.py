@@ -10,8 +10,12 @@ class TestGetTimes(object):
     
     def test_gets_times(self):
         times = get_times.GetTimes(self.darwin_session(), 'BKT', 'BHM')
-        assert re.match('The next train is the', times.response())
+        assert re.match('The next train to Birmingham New Street is the', times.response())
     
     def test_returns_error(self):
         times = get_times.GetTimes(self.darwin_session(), 'BKT', 'XXX')
         assert re.match("Sorry, I couldn't find any departures for your stations", times.response())
+    
+    def test_gets_station_name(self):
+        times = get_times.GetTimes(self.darwin_session(), 'BKT', 'BHM')
+        assert times.station_name('BHM') == 'Birmingham New Street'

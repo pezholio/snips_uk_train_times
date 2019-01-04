@@ -1,3 +1,5 @@
+import csv
+
 class GetTimes:
     def __init__(self, darwin_session, home, to):
         self.darwin = darwin_session
@@ -9,7 +11,7 @@ class GetTimes:
         
         if (departure != None):
             time = departure.std
-            return "The next train is the %s" % (time)
+            return "The next train to %s is the %s" % (self.station_name(self.to), time)
         else:
             return "Sorry, I couldn't find any departures for your stations"
     
@@ -23,3 +25,11 @@ class GetTimes:
                 s = service
                 break
         return s
+    
+    def station_name(self, code):
+        return self.station_dict()[code]
+
+    def station_dict(self):
+        with open('station_codes.csv') as f:
+           d = dict(filter(None, csv.reader(f)))
+        return d
