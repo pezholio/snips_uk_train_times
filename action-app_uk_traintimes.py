@@ -31,9 +31,10 @@ class TrainTimes(object):
         except :
             self.config = None
         
-        self.api_key = self.config.get("secret").get("nre_api_key")
+        api_key = self.config.get("secret").get("nre_api_key")
         self.home_station_code = self.config.get("secret").get("home_station_code")
         self.destination_code = self.config.get("secret").get("destination_code")
+        self.darwin_session = DarwinLdbSession(wsdl="https://lite.realtime.nationalrail.co.uk/OpenLDBWS/wsdl.aspx", api_key=api_key)
 
         # start listening to MQTT
         self.start_blocking()
@@ -43,7 +44,7 @@ class TrainTimes(object):
         if intent_message.intent.intent_name == 'pezholio:next_departure':
             print '[Received] intent: {}'.format(intent_message.intent.intent_name)
             
-            get_times = GetTimes(self.api_key, self.home_station_code, self.destination_code)
+            get_times = GetTimes(self.darwin_session, self.home_station_code, self.destination_code)
                                                                                       
             # if need to speak the execution result by tts
             hermes.publish_end_session(intent_message.session_id, get_times.response())

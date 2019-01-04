@@ -1,8 +1,6 @@
-from nredarwin.webservice import DarwinLdbSession
-
 class GetTimes:
-    def __init__(self, api_key, home, to):
-        self.darwin = DarwinLdbSession(wsdl="https://lite.realtime.nationalrail.co.uk/OpenLDBWS/wsdl.aspx", api_key=api_key)
+    def __init__(self, darwin_session, home, to):
+        self.darwin = darwin_session
         self.home = home
         self.to = to
     
