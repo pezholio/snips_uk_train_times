@@ -51,9 +51,6 @@ class TrainTimes(object):
         elif intent_message.intent.intent_name == 'pezholio:next_train_to_station':
             print '[Received] intent: {}'.format(intent_message.intent.intent_name)
             
-            station = Station.find_by_name(intent_message.slots.items()[0][0])
-            get_times = GetTimes(self.darwin_session, self.home_station_code, station.code)
-            
             for (slot_value, slot) in intent_message.slots.items():
                 if slot_value == 'station':
                     station_name = slot[0].slot_value.value.value
